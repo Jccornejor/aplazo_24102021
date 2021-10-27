@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  api:
+    container_name: api
+    hostname: webapi
+    build: .
+    ports:
+      - "8080:9000"
+      - "8081:9001"
+    restart: on-failure
